@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .menu a {
+    margin-left: 20px;
+  }
+
+  .navbar .icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar .menu {
+      display: none;
+    }
+
+    .navbar .icon {
+      display: block;
+    }
+
+    .navbar.responsive .icon {
+      color: #fff;
+    }
+
+    .navbar.responsive .menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust as needed */
+      left: 0;
+      background-color: #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    .navbar.responsive .menu a {
+      margin: 0;
+      padding: 15px 20px;
+      text-align: center;
+      border-top: 1px solid #555;
+    }
+  }
+
+  #hero {
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .hero-text {
+    max-width: 600px;
+    color: #000;
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .hero-image {
+    flex: 1;
+    height: 90%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    margin-top: 20px;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+
+    .hero-text {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .hero-image {
+      order: -1;
+      height: 50vh;
+    }
+  }
+
+  /*about us*/
+  #about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .container11 {
+    max-width: 890px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  /*admissions*/
+  div#admissions {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .admissions-image {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+
+  .admissions-description {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .apply-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 60px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .admissions-image,
+    .admissions-description {
+      max-width: 400px;
+      margin: 0;
+    }
+    .apply-now-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+  }
+
+
+  /*contact*/
+
+  div#contact-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+
+  .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .container1 {
+      padding: 0 20px;
+    }
+  }
+
+  .contact-info {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+  .contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .contact-info {
+      padding: 20px;
+    }
+  }
