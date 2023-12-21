@@ -6,3 +6,7 @@ function myFunction() {
       x.className = "navbar";
     }
   }
+
+function callUsNow(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
