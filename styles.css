@@ -1,7 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
   }
 
 .navbar {
@@ -121,12 +125,7 @@ body {
     color: #000;
     text-decoration: none;
   }
-
-  .hero-image {
-    flex: 1;
-    height: 90%;
-  }
-
+  
   .hero-image img {
     width: 100%;
     margin-top: 20px;
@@ -152,13 +151,30 @@ body {
     }
   }
 
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .hero-image {
+      order: 0; /* Set the order back to default */
+      height: 50vh;
+    }
+  }
   /*about us*/
   #about-us {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f7f7f7;
+    background-color: #fff; /*#f7f7f7*/
     text-align: center;
   }
 
